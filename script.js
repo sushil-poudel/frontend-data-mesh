@@ -1,10 +1,10 @@
 const profile = {
   researcherName: "Sushil-Poudel",
-  thesisTitle: "Building a Real-World Data Mesh Contracts Platform in 4 Months",
-  universityName: "Jaraco Data Engineering Thesis",
+  thesisTitle: "Building a Data Mesh Platform with AI integrated",
+  universityName: " Data Engineering Thesis",
   supervisorName: "To be announced",
-  email: "sushil_poudel@jaracoGmbH.onmicrosoft.com",
-  repositoryUrl: "https://github.com/jaracogmbh/jaraco-data-mesh",
+  email: "sushilpoudel@gmail.com",
+  repositoryUrl: "#",
 };
 
 const thesisWindow = {

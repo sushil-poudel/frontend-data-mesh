@@ -1,16 +1,21 @@
 @import url("base.css");
 
 :root {
-  --primary: #6080f8;
-  --primary-strong: #4768e8;
-  --primary-glow: rgba(96, 128, 248, 0.4);
-  --accent: #f5924a;
-  --accent-soft: rgba(245, 146, 74, 0.18);
-  --orb-a: #3f60cc;
-  --orb-b: #c97a2e;
-  --orb-c: #7044c8;
-  --aside-bg: linear-gradient(140deg, #111f4d 0%, #192e6c 52%, #223892 100%);
-  --button-solid: linear-gradient(135deg, #6080f8 0%, #8aa4ff 100%);
+  --primary: #FDB913;
+  --primary-strong: #d49a00;
+  --primary-glow: rgba(253, 185, 19, 0.35);
+  --accent: #4aaee8;
+  --accent-soft: rgba(74, 174, 232, 0.16);
+  --orb-a: #00497E;
+  --orb-b: #FDB913;
+  --orb-c: #006aaf;
+  --aside-bg: linear-gradient(140deg, #002b4d 0%, #003a68 52%, #00497E 100%);
+  --button-solid: linear-gradient(135deg, #FDB913 0%, #ffd050 100%);
+}
+
+/* Gold button background needs dark text in dark mode */
+.btn-solid {
+  color: #003558;
 }
 
 h1,
@@ -24,23 +29,28 @@ h4 {
 }
 
 .card::before {
-  background: linear-gradient(90deg, rgba(96, 128, 248, 0.85), rgba(245, 146, 74, 0.75));
+  background: linear-gradient(90deg, rgba(253, 185, 19, 0.85), rgba(74, 174, 232, 0.7));
 }
 
 .final {
-  background: linear-gradient(145deg, rgba(11, 17, 42, 0.95), rgba(9, 13, 28, 0.98));
+  background: linear-gradient(145deg, rgba(0, 43, 78, 0.35), rgba(6, 14, 26, 0.95));
+}
+
+/* Light mode: navy button gets white text */
+html[data-theme="light"] .btn-solid {
+  color: #ffffff;
 }
 
 html[data-theme="light"] .card::before {
-  background: linear-gradient(90deg, rgba(58, 107, 232, 0.8), rgba(217, 108, 40, 0.7));
+  background: linear-gradient(90deg, rgba(0, 73, 126, 0.8), rgba(253, 185, 19, 0.7));
 }
 
 html[data-theme="light"] .final {
-  background: linear-gradient(145deg, #eef2ff, #e4ebf8);
+  background: linear-gradient(145deg, #eef6ff, #d8edf8);
 }
 
-html[data-theme="light"] .stats article:nth-child(1) { border-color: rgba(58, 107, 232, 0.2); }
-html[data-theme="light"] .stats article:nth-child(2) { border-color: rgba(217, 108, 40, 0.2); }
-html[data-theme="light"] .stats article:nth-child(3) { border-color: rgba(130, 100, 220, 0.2); }
+html[data-theme="light"] .stats article:nth-child(1) { border-color: rgba(0, 73, 126, 0.2); }
+html[data-theme="light"] .stats article:nth-child(2) { border-color: rgba(253, 185, 19, 0.3); }
+html[data-theme="light"] .stats article:nth-child(3) { border-color: rgba(0, 106, 175, 0.2); }
 html[data-theme="light"] .stats article:nth-child(4) { border-color: rgba(5, 150, 105, 0.2); }
 
