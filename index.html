@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thesis project in progress: a Data Mesh Contracts Platform with domain producers, governance API, Kafka streaming, and MCP integration."
+    />
+    <title>Thesis Build | Data Mesh Contracts Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#070b16" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t !== "dark") document.documentElement.setAttribute("data-theme", "light");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="backdrop" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="orb orb-c"></span>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+    <header class="topbar" id="topbar">
+      <a href="#top" class="brand">Data Mesh Thesis</a>
+      <nav>
+        <a href="#build-now">Build Now</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#follow">Follow</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch to light theme" title="Toggle theme">
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">THESIS PROJECT IN PROGRESS</p>
+            <h1 id="thesisTitle">Building a Real-World Data Mesh Contracts Platform in 4 Months</h1>
+            <p class="identity-line">
+              Research by <strong id="researcherName">Sushil</strong>
+              <span class="dot"></span>
+              <span id="universityName">Thesis Track</span>
+            </p>
+            <p class="lede">
+              I am currently developing a platform where domain teams can register governed data products,
+              stream events through Kafka, and make datasets discoverable through API and MCP tooling.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="#build-now">See What Is Already Built</a>
+              <a class="btn btn-ghost" href="#roadmap">View 4-Month Plan</a>
+            </div>
+          </div>
+
+          <aside class="hero-aside">
+            <p class="eyebrow light">LIVE BUILD PULSE</p>
+            <h3>Actively Building</h3>
+            <p class="aside-text">
+              This platform is under active thesis development with continuous architecture, data, and MCP iteration.
+            </p>
+            <ul class="status-list">
+              <li><span></span> Contract-first governance model in place</li>
+              <li><span></span> Multi-domain producers publishing events</li>
+              <li><span></span> MCP tool and resource layer integrated</li>
+            </ul>
+            <p class="pulse-time">Last refreshed: <span id="liveStamp">--</span></p>
+          </aside>
+        </div>
+
+        <div class="stats">
+          <article>
+            <h2 data-counter="8">0</h2>
+            <p>Producer services</p>
+          </article>
+          <article>
+            <h2 data-counter="8">0</h2>
+            <p>Kafka topics wired</p>
+          </article>
+          <article>
+            <h2 data-counter="3">0</h2>
+            <p>Access layers (API, MCP, CLI)</p>
+          </article>
+          <article>
+            <h2 data-counter="20">0</h2>
+            <p>Automated tests</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <div class="section-head">
+          <p class="eyebrow">THESIS PROFILE</p>
+          <h3>Project context</h3>
+        </div>
+        <div class="profile-grid">
+          <article class="card profile-item tilt-card">
+            <p class="label">Researcher</p>
+            <h4 id="profileResearcher">Sushil</h4>
+          </article>
+          <article class="card profile-item tilt-card">
+            <p class="label">Supervisor</p>
+            <h4 id="supervisorName">To be announced</h4>
+          </article>
+          <article class="card profile-item tilt-card">
+            <p class="label">Thesis Window</p>
+            <h4 id="profileDuration">Mar 2026 - Jul 2026</h4>
+          </article>
+          <article class="card profile-item tilt-card">
+            <p class="label">Current Stage</p>
+            <h4>In active development</h4>
+          </article>
+        </div>
+      </section>
+
+      <section id="build-now" class="panel reveal">
+        <div class="section-head">
+          <p class="eyebrow">CURRENT IMPLEMENTATION</p>
+          <h3>What I have already built right now</h3>
+        </div>
+        <div class="grid two">
+          <article class="card tilt-card">
+            <h4>Contract Governance Core</h4>
+            <p>
+              A FastAPI contracts service with Postgres persistence, deduplication via unique indexes,
+              catalog search, product data preview endpoint, Prometheus metrics, and Kafka event emission
+              to <code>data-contracts</code>.
+            </p>
+          </article>
+          <article class="card tilt-card">
+            <h4>Multi-Domain Producers</h4>
+            <p>
+              Eight producers are available: MediaWiki, Jira, GitHub, Kimai, Paperless, Vtiger,
+              Dovecot, and a secure generic producer with OIDC support.
+            </p>
+          </article>
+          <article class="card tilt-card">
+            <h4>MCP Integration</h4>
+            <p>
+              An MCP server and client stack enables tool-based discovery of contracts, schema reads,
+              and data sampling, with Streamable HTTP support and resource URIs for domain context.
+            </p>
+          </article>
+          <article class="card tilt-card">
+            <h4>Observability + Delivery</h4>
+            <p>
+              Prometheus metrics across services, Grafana dashboard definitions, Docker Compose setup,
+              Kubernetes manifests, and CI workflows for validation and image publishing.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="architecture" class="panel reveal">
+        <div class="section-head">
+          <p class="eyebrow">SYSTEM SNAPSHOT</p>
+          <h3>How the platform works</h3>
+        </div>
+        <div class="pipeline">
+          <div class="step">Domain Producers</div>
+          <div class="arrow">&#8594;</div>
+          <div class="step">Contracts API + Postgres</div>
+          <div class="arrow">&#8594;</div>
+          <div class="step">Kafka Topics + Consumer</div>
+          <div class="arrow">&#8594;</div>
+          <div class="step">MCP + CLI + External Agents</div>
+        </div>
+        <p class="note">
+          This is an active build, not a final release. I am iterating continuously on data quality,
+          connector depth, and production-grade reliability.
+        </p>
+      </section>
+
+      <section class="panel reveal">
+        <div class="section-head">
+          <p class="eyebrow">ACTIVE DATA DOMAINS</p>
+          <h3>Current producer landscape</h3>
+        </div>
+        <div class="chips">
+          <span>&#128218; knowledge / mediawiki.documents</span>
+          <span>&#9989; work-management / jira.issues</span>
+          <span>&#128202; developer-observability / github.events</span>
+          <span>&#128197; finance-ops / kimai.timesheets</span>
+          <span>&#128196; records-management / paperless.uploads</span>
+          <span>&#128100; crm-ops / vtiger.contacts</span>
+          <span>&#128140; communications / dovecot.emails</span>
+          <span>&#128295; generic producer / custom topics</span>
+        </div>
+      </section>
+
+      <section id="roadmap" class="panel reveal">
+        <div class="section-head">
+          <p class="eyebrow">THESIS ROADMAP</p>
+          <h3>4-month execution timeline</h3>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-labels">
+            <span id="progressText">Progress: calculating...</span>
+            <span id="dateWindow">Window: --</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </div>
+
+        <div id="milestoneList" class="grid four timeline"></div>
+      </section>
+
+      <section id="follow" class="panel final reveal">
+        <h3>Follow the build</h3>
+        <p>
+          I am building a practical blueprint for governed, discoverable, and AI-ready enterprise data products.
+          This thesis demonstrates how contract-first thinking, streaming, and MCP interfaces can converge into
+          a usable data mesh platform.
+        </p>
+        <div class="follow-links">
+          <a id="repoLink" class="btn btn-solid" href="#" target="_blank" rel="noopener noreferrer">View Repository</a>
+          <a id="emailLink" class="btn btn-ghost" href="#">Contact Researcher</a>
+        </div>
+        <p class="small">
+          Update profile settings in <code>landing_page/script.js</code> to change thesis metadata or dates.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <span id="year"></span> Thesis Development Journey | Data Mesh Contracts Platform
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
